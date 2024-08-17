@@ -10,8 +10,7 @@ const AboutCard = () => {
         What i do
       </span>
       <p className="text-3xl lg:text-7xl gradient-text lg:w-[85%]">
-        My apps are well designed and optimised, captivating users and meeting
-        their objectives
+      As a final-year student, I design and develop optimized, user-centric websites that captivate and fulfill user needs.
       </p>
     </div>
   );

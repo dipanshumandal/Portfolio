@@ -2,7 +2,9 @@ import React from "react";
 // import ProjectCard from "./ProjectCard";
 import { HiArrowSmLeft, HiArrowSmRight } from "react-icons/hi";
 import { useRef } from "react";
+import VBay from "../assets/VBay-2.png";
 import AboutDay from "../assets/QuickSign.png";
+import Signs from "../assets/Signs.png";
 import QuickSign from "../assets/QuickSign.png";
 import { AiFillGithub } from "react-icons/ai";
 import { RiSignalTowerFill } from "react-icons/ri";
@@ -28,18 +30,18 @@ const ProjectSection = () => {
       <div className="h-fit w-[300px] md:w-[320p] border-2 border-gray-200 border-opacity-60 rounded-2xl overflow-clip lg:overlow-hidden hover:shadow-md lg:hover:scale-105 transition-all backdrop-blur-3xl shadow-xl">
         <a href="">
           <img
-            src={AboutDay}
+            src={VBay}
             alt="project-img"
             className="lg:h-48 h-[200px] w-full object-cover object-center"
           />
         </a>
         <div className="p-4 flex flex-col lg:gap-3">
-          <h2 className="tracking-widest text-2xl text-white">Focusify</h2>
+          <h2 className="tracking-widest text-2xl text-white">VBay</h2>
           <h1 className="text-lg lg:text-xl font-bold text-gray-400">
-          Developed a Chrome extension to streamline tab management, allowing users to save, close, and reopen tabs with ease. Implemented session storage with Chrome's storage.sync API and designed a user-friendly interface for efficient task focus.
+          Created a dynamic e-commerce platform for buying and selling pictures, featuring user authentication, secure payment integration, and a streamlined user interface. Implemented the frontend with React and managed the backend using Node.js and Express.
           </h1>
           <div className="flex items-center justify-between">
-            <a href="#">
+            <a href="https://github.com/dipanshumandal/VBay" target="_blank">
               <AiFillGithub className="text-pink-500 font-bold inline-flex item-center text-lg md:text-xl md:mb-2 lg:mb-0 hover:text-purple-600 cursor-pointer" />
             </a>
             <a href="#">
@@ -86,7 +88,33 @@ const ProjectSection = () => {
         <div className="p-4 flex flex-col lg:gap-3">
           <h2 className="tracking-widest text-2xl text-white">QuickSign</h2>
           <h1 className="text-lg lg:text-xl font-bold text-gray-400">
-          Developed an advanced online tool for creating and saving digital signatures, featuring customizable options, responsive design, and seamless storage, retrieval, and PNG download capabilities.
+          Developed an advanced online tool for creating and saving digital signatures, featuring customizable options, responsive design, and seamless storage, retrieval, and PNG download capabilities.User-friendly interface to simplify the signature creation process.
+
+          </h1>
+          <div className="flex items-center justify-between">
+            <a href="https://github.com/dipanshumandal/QuickSign" target="_blank">
+              <AiFillGithub className="text-pink-500 font-bold inline-flex item-center text-lg md:text-xl md:mb-2 lg:mb-0 hover:text-purple-600 cursor-pointer" />
+            </a>
+            <a href="#">
+              <RiSignalTowerFill className="text-pink-500 font-bold inline-flex item-center text-lg md:text-xl md:mb-2 lg:mb-0 hover:text-purple-600 cursor-pointer" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="p-4 -m-4">
+      <div className="h-fit w-[300px] md:w-[320p] border-2 border-gray-200 border-opacity-60 rounded-2xl overflow-clip lg:overlow-hidden hover:shadow-md lg:hover:scale-105 transition-all backdrop-blur-3xl shadow-xl">
+        <a href="">
+          <img
+            src={Signs}
+            alt="project-img"
+            className="lg:h-48 h-[200px] w-full object-cover object-center"
+          />
+        </a>
+        <div className="p-4 flex flex-col lg:gap-3">
+          <h2 className="tracking-widest text-2xl text-white">SIGNS</h2>
+          <h1 className="text-lg lg:text-xl font-bold text-gray-400">
+          Designed and developed 'SIGNS,' a full-stack web application created for a Hackathon, where we implemented an innovative business idea presented during the competition. Led the creation of an intuitive, user-friendly front-end interface.
 
           </h1>
           <div className="flex items-center justify-between">
