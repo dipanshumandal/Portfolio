@@ -20,6 +20,7 @@ const Home = () => {
     <div className="w-[80vw]  mx-auto">
         <Navbar/>
         <PortfolioCard />
+        <div className="justify-items-center">
         <section id="about">
         <HomeCard />
         </section>
@@ -33,6 +34,7 @@ const Home = () => {
         <section id="contact">
          <ContactSection />
         </section>
+        </div>
     </div>
   );
 };
