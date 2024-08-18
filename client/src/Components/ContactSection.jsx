@@ -1,7 +1,9 @@
 import React from "react";
 import { AiFillInstagram, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { useForm, ValidationError } from '@formspree/react';
 
 const ContactSection = () => {
+  const [state, handleSubmit] = useForm("mnnabajj");
   return (
     <div
       data-aos="fade-left"
@@ -65,7 +67,7 @@ const ContactSection = () => {
             </div>
     </div>
         <div>
-          <form className="flex flex-col p-3">
+          <form className="flex flex-col p-3" onSubmit={handleSubmit}>
             <input
               type="text"
               name="name"
@@ -80,6 +82,11 @@ const ContactSection = () => {
               placeholder="Enter your email"
               className="bg-transparent p-3 outline-none border focus:border-purple-500 focus:pl-8 transition-all duration-100 rounded-lg border-white gradient-text font-mon text-lg lg:text-2xl  mb-5 lg:mb-10 w-full lg:w-[30vw]"
             />
+            <ValidationError 
+              prefix="Email" 
+              field="email"
+              errors={state.errors}
+            />
             <textarea
               name="message"
               id="message"
@@ -87,9 +94,15 @@ const ContactSection = () => {
               className="bg-transparent p-3 outline-none border focus:border-purple-500 focus:pl-8 transition-all duration-100 rounded-lg border-white gradient-text font-mon text-lg lg:text-2xl  mb-5 lg:mb-10 w-full lg:w-[30vw]"
               placeholder="Enter your message"
             />
+            <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={state.errors}
+            />
             <button
               type="submit"
               className="px-3 py-2 text-lg lg:text-2xl bg-purple-500 hover:bg-purple-600 border font-bold text-white rounded-lg"
+              disabled={state.submitting}
             >
               Send Message
             </button>
