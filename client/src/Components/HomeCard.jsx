@@ -18,7 +18,7 @@ Hi, I'm Dipanshu Mandal, a passionate and dedicated Computer Science student at 
         <img
           src={myImg}
           alt="profile"
-          className="rounded-full w-[300px] h-[300px] lg:w-[450px] lg:h-[450px] mx-auto "
+          className="rounded-full w-[300px] h-[295px] lg:w-[450px] lg:h-[450px] mx-auto "
         />
       </div>
     </div>
